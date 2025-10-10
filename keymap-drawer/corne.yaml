@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   Base:
-  - TAB
+  - ESCAPE
   - Q
   - W
   - E
@@ -9,27 +9,27 @@ layers:
   - T
   - Y
   - U
-  - I
+  - {t: I, h: Sft+I}
   - O
   - P
   - BACKSPACE
   - LSHFT
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: LGUI}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: LEFT CONTROL}
+  - {t: F, h: LEFT SHIFT}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: LEFT SHIFT}
+  - {t: K, h: LEFT CONTROL}
+  - {t: L, h: LEFT ALT}
+  - {t: ;, h: LGUI}
   - ''''
   - LCTRL
-  - Z
-  - X
-  - C
-  - V
+  - {t: Z, h: Alt+Z}
+  - {t: X, h: Ctl+X}
+  - {t: C, h: Ctl+C}
+  - {t: V, h: Ctl+V}
   - B
   - N
   - M
@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - RSHFT
-  - {t: ESCAPE, h: LGUI}
-  - {t: SPACE, h: NavNum}
-  - SPACE
-  - RET
+  - {t: ESCAPE, h: System}
+  - {t: SPACE, h: Symbols}
+  - {t: TAB, h: Symbols}
+  - {t: RETURN, h: Symbols}
   - {t: BACKSPACE, h: Symbols}
-  - DELETE
+  - {t: DELETE, h: System}
   NavNum:
   - {t: ▽, type: trans}
   - '1'
@@ -57,16 +57,16 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - '&caps_word'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+PRINTSCREEN
+  - HOME
   - UP ARROW
-  - '&browsertab'
+  - END
   - PAGE UP
   - '0'
   - '4'
   - '5'
   - '6'
-  - {t: ▽, type: trans}
+  - Alt+PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -80,12 +80,12 @@ layers:
   - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LGUI
-  - {type: held}
-  - SPACE
-  - RET
+  - Ctl+DELETE
+  - Ctl+BACKSPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Ctl+BACKSPACE
+  - Ctl+DELETE
   Symbols:
   - {t: ▽, type: trans}
   - '!'
@@ -123,12 +123,12 @@ layers:
   - '}'
   - '|'
   - {t: ▽, type: trans}
-  - LGUI
-  - {t: ▽, type: trans}
-  - SPACE
-  - RET
+  - '&macro_highlight_word'
   - {type: held}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&macro_highlight_word'
   System:
   - {t: ▽, type: trans}
   - F1
@@ -166,11 +166,11 @@ layers:
   - F3
   - '&bootloader'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Extra:
   - {t: ▽, type: trans}
