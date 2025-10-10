@@ -9,7 +9,7 @@ layers:
   - T
   - Y
   - U
-  - {t: I, h: Sft+I}
+  - I
   - O
   - P
   - BACKSPACE
