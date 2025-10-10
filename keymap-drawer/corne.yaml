@@ -62,7 +62,7 @@ layers:
   - UP ARROW
   - END
   - PAGE UP
-  - '0'
+  - '%'
   - '4'
   - '5'
   - '6'
@@ -74,11 +74,11 @@ layers:
   - DOWN
   - RIGHT ARROW
   - PAGE DOWN
-  - {t: ▽, type: trans}
+  - '0'
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - /
   - {t: ▽, type: trans}
   - Ctl+DELETE
   - Ctl+BACKSPACE
