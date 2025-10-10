@@ -109,7 +109,7 @@ layers:
   - '='
   - '['
   - ']'
-  - \
+  - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -121,7 +121,7 @@ layers:
   - +
   - '{'
   - '}'
-  - '|'
+  - \
   - {t: ▽, type: trans}
   - '&macro_highlight_word'
   - {type: held}
@@ -172,54 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Extra:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mmv MOVE_UP'
-  - {t: ▽, type: trans}
-  - '&msc SCRL_UP'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - '&msc SCRL_DOWN'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
 combos:
-- p: [13, 29]
-  k: ESCAPE
-- p: [15, 21]
-  k: DELETE
 - p: [5, 17]
   k: '%'
 - p: [28, 16]
@@ -230,22 +183,12 @@ combos:
   k: '#'
 - p: [2, 14]
   k: '@'
-- p: [26, 14]
-  k: \
-- p: [28, 27]
-  k: COPY
-- p: [26, 27]
-  k: PASTE
 - p: [8, 20]
   k: '*'
 - p: [32, 20]
   k: /
 - p: [7, 19]
   k: +
-- p: [31, 19]
-  k: KP MINUS
-- p: [30, 18]
-  k: _
 - p: [31, 32]
   k: '['
 - p: [33, 32]
