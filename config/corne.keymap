@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
 #define NAV 1
@@ -58,18 +57,6 @@
     };
 
     macros {
-        browsertab: browsertab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_release>,
-                <&kp LCTRL>;
-        };
-
         macro_highlight_word: macro_highlight_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -85,16 +72,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 29>;
-        };
-
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <15 21>;
-        };
 
         perc {
             bindings = <&kp PERCENT>;
@@ -121,21 +98,6 @@
             key-positions = <2 14>;
         };
 
-        backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <26 14>;
-        };
-
-        copy {
-            bindings = <&kp K_COPY>;
-            key-positions = <28 27>;
-        };
-
-        paste {
-            bindings = <&kp K_PASTE>;
-            key-positions = <26 27>;
-        };
-
         star {
             bindings = <&kp STAR>;
             key-positions = <8 20>;
@@ -149,16 +111,6 @@
         plus {
             bindings = <&kp PLUS>;
             key-positions = <7 19>;
-        };
-
-        minus {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <31 19>;
-        };
-
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <30 18>;
         };
 
         leftbrack {
@@ -231,9 +183,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT          &kp HASH               &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK              &kp LEFT_PARENTHESIS  &kp RPAR  &trans
-&trans  &trans    &kp HOME        &kp UP_ARROW           &kp END          &kp GRAVE    &kp MINUS  &kp EQUAL  &kp LBKT               &kp RBKT              &kp BSLH  &trans
-&trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW         &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS   &kp LBRC               &kp RBRC              &kp PIPE  &trans
+&trans  &kp EXCL  &kp AT          &kp HASH               &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK              &kp LEFT_PARENTHESIS  &kp RPAR       &trans
+&trans  &trans    &kp HOME        &kp UP_ARROW           &kp END          &kp GRAVE    &kp MINUS  &kp EQUAL  &kp LBKT               &kp RBKT              &kp PIPE       &trans
+&trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW         &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS   &kp LBRC               &kp RBRC              &kp BACKSLASH  &trans
                                   &macro_highlight_word  &trans           &trans       &trans     &trans     &macro_highlight_word
             >;
         };
@@ -245,16 +197,6 @@
 &trans  &kp F11       &kp F12       &trans        &trans      &studio_unlock    &trans  &kp F4  &kp F5  &kp F6  &trans       &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL    &trans  &kp F1  &kp F2  &kp F3  &bootloader  &trans
                                     &trans        &trans      &trans            &trans  &trans  &trans
-            >;
-        };
-
-        EXTRA {
-            display-name = "Extra";
-            bindings = <
-&trans  &trans  &trans          &mmv MOVE_UP    &trans           &msc SCRL_UP      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans          &trans           &trans            &trans  &trans  &trans
             >;
         };
     };
