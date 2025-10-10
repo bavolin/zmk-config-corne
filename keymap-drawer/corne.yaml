@@ -39,8 +39,8 @@ layers:
   - RSHFT
   - {t: ESCAPE, h: System}
   - {t: SPACE, h: Symbols}
-  - {t: TAB, h: Symbols}
-  - {t: RETURN, h: Symbols}
+  - {t: TAB, h: NavNum}
+  - {t: RETURN, h: NavNum}
   - {t: BACKSPACE, h: Symbols}
   - {t: DELETE, h: System}
   NavNum:
@@ -82,7 +82,7 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+DELETE
   - Ctl+BACKSPACE
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - Ctl+BACKSPACE
   - Ctl+DELETE
