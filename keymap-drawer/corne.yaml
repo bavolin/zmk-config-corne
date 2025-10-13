@@ -14,10 +14,10 @@ layers:
   - P
   - BACKSPACE
   - LSHFT
-  - {t: A, h: LGUI}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LEFT CONTROL}
-  - {t: F, h: LEFT SHIFT}
+  - A
+  - S
+  - D
+  - F
   - G
   - H
   - {t: J, h: LEFT SHIFT}
@@ -44,7 +44,7 @@ layers:
   - {t: BACKSPACE, h: Symbols}
   - {t: DELETE, h: System}
   NavNum:
-  - {t: ▽, type: trans}
+  - {t: Base, h: toggle}
   - '1'
   - '2'
   - '3'
@@ -58,9 +58,9 @@ layers:
   - {t: ▽, type: trans}
   - '&caps_word'
   - Alt+PRINTSCREEN
-  - HOME
   - UP ARROW
-  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - PAGE UP
   - '%'
   - '4'
@@ -69,10 +69,10 @@ layers:
   - Alt+PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
+  - LEFT ARROW
+  - DOWN ARROW
   - RIGHT ARROW
+  - {t: ▽, type: trans}
   - PAGE DOWN
   - '0'
   - '1'
@@ -198,7 +198,7 @@ combos:
 - p: [16, 15]
   k: {t: NavNum, h: toggle}
 - p: [1, 2]
-  k: {t: Symbols, h: toggle}
+  k: {t: System, h: toggle}
 - p: [6, 7]
   k: '='
 - p: [18, 19]
