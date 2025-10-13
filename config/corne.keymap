@@ -132,6 +132,66 @@
             bindings = <&paragreat>;
             key-positions = <20 21>;
         };
+
+        LAYER_number {
+            bindings = <&to 1>;
+            key-positions = <16 15>;
+        };
+
+        LAYER_function {
+            bindings = <&to 2>;
+            key-positions = <1 2>;
+        };
+
+        math_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <6 7>;
+        };
+
+        math_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <18 19>;
+        };
+
+        math_underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <30 31>;
+        };
+
+        math_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <18 19 20>;
+        };
+
+        paren_Lbracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <7 40>;
+        };
+
+        paren_Lparenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <40 19>;
+        };
+
+        paren_Lbrace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <31 40>;
+        };
+
+        paren_Rbracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <40 8>;
+        };
+
+        paren_Rparenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <40 20>;
+        };
+
+        paren_Rbrace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <40 32>;
+        };
     };
 
     //
