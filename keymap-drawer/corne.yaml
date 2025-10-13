@@ -20,16 +20,16 @@ layers:
   - F
   - G
   - H
-  - {t: J, h: LEFT SHIFT}
-  - {t: K, h: LEFT CONTROL}
+  - J
+  - K
   - {t: L, h: LEFT ALT}
   - {t: ;, h: LGUI}
   - ''''
   - LCTRL
   - {t: Z, h: Alt+Z}
-  - {t: X, h: Ctl+X}
-  - {t: C, h: Ctl+C}
-  - {t: V, h: Ctl+V}
+  - X
+  - C
+  - V
   - B
   - N
   - M
@@ -37,7 +37,7 @@ layers:
   - .
   - /
   - RSHFT
-  - {t: ESCAPE, h: System}
+  - {t: LGUI, h: System}
   - {t: SPACE, h: Symbols}
   - {t: TAB, h: NavNum}
   - {t: RETURN, h: NavNum}
@@ -87,7 +87,7 @@ layers:
   - Ctl+BACKSPACE
   - Ctl+DELETE
   Symbols:
-  - {t: ▽, type: trans}
+  - {t: Base, h: toggle}
   - '!'
   - '@'
   - '#'
@@ -130,7 +130,7 @@ layers:
   - {t: ▽, type: trans}
   - '&macro_highlight_word'
   System:
-  - {t: ▽, type: trans}
+  - {t: Base, h: toggle}
   - F1
   - F2
   - F3
@@ -261,3 +261,11 @@ combos:
   k: PAGE UP
 - p: [30, 33]
   k: PAGE DOWN
+- p: [26, 28]
+  k: Ctl+X
+- p: [26, 27]
+  k: Ctl+C
+- p: [27, 28]
+  k: Ctl+V
+- p: [12, 13, 14]
+  k: Gui+Sft+S
