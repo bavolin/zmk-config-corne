@@ -78,11 +78,6 @@
             key-positions = <5 17>;
         };
 
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <28 16>;
-        };
-
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <4 16>;
@@ -191,6 +186,111 @@
         paren_Rbrace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <40 32>;
+        };
+
+        shape_fslash {
+            bindings = <&kp SLASH>;
+            key-positions = <31 20 9>;
+        };
+
+        shape_bslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <7 20 33>;
+        };
+
+        shape_caret {
+            bindings = <&kp CARET>;
+            key-positions = <19 8 21>;
+        };
+
+        shape_lthan {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <19 8 41>;
+        };
+
+        shape_gthan {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <7 20 40>;
+        };
+
+        shape_tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <19 10>;
+        };
+
+        shape_accent {
+            bindings = <&kp GRAVE>;
+            key-positions = <6 19>;
+        };
+
+        shape_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <31 9>;
+        };
+
+        intonation_exclam {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <7 8 21>;
+        };
+
+        intonation_question {
+            bindings = <&kp QUESTION>;
+            key-positions = <19 20 9>;
+        };
+
+        intonation_dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <31 32 9>;
+        };
+
+        atsign {
+            bindings = <&kp AT>;
+            key-positions = <6 19 20>;
+        };
+
+        asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <30 31 32>;
+        };
+
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <18 20>;
+        };
+
+        hash_pound {
+            bindings = <&kp POUND>;
+            key-positions = <6 7 8>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <19 20>;
+        };
+
+        enter_return {
+            bindings = <&kp ENTER>;
+            key-positions = <20 21 22>;
+        };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <7 8 9>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <8 9 10>;
+        };
+
+        page_up {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <18 21>;
+        };
+
+        page_down {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <30 33>;
         };
     };
 
