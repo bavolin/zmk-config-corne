@@ -293,11 +293,6 @@ END:      Intonation Chords
             key-positions = <7 9>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <19 20>;
-        };
-
         enter_return {
             bindings = <&kp ENTER>;
             key-positions = <20 21 19>;
