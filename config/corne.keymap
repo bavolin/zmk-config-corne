@@ -128,14 +128,14 @@
             key-positions = <20 21>;
         }; */
 
-        LAYER_number {
+        LAYER_numpad {
             bindings = <&tog 1>;
             key-positions = <16 15>;
         };
 
-        LAYER_function {
-            bindings = <&tog 3>;
-            key-positions = <1 2>;
+        LAYER_arrownav {
+            bindings = <&tog 2>;
+            key-positions = <16 15 14>;
         };
 
         math_equal {
@@ -311,6 +311,11 @@
         snip {
             bindings = <&kp LG(LS(S))>;
             key-positions = <12 13 14>;
+        };
+
+        LAYER_function {
+            bindings = <&tog 3>;
+            key-positions = <16 15 14 13>;
         };
     };
 
