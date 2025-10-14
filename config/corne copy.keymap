@@ -73,7 +73,7 @@
     combos {
         compatible = "zmk,combos";
 
-/*         perc {
+        perc {
             bindings = <&kp PERCENT>;
             key-positions = <5 17>;
         };
@@ -126,7 +126,7 @@
         para-great {
             bindings = <&paragreat>;
             key-positions = <20 21>;
-        }; */
+        };
 
         LAYER_number {
             bindings = <&tog 1>;
