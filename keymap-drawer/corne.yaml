@@ -38,10 +38,10 @@ layers:
   - /
   - RSHFT
   - {t: LGUI, h: Function}
-  - {t: SPACE, h: Symbols}
+  - {t: SPACE, h: ArrowNav}
   - {t: TAB, h: Numpad}
   - {t: RETURN, h: Numpad}
-  - {t: BACKSPACE, h: Symbols}
+  - {t: BACKSPACE, h: ArrowNav}
   - {t: DELETE, h: Function}
   Numpad:
   - {t: Base, h: toggle}
@@ -124,7 +124,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -210,7 +210,7 @@ layers:
   - \
   - {t: ▽, type: trans}
   - '&macro_highlight_word'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
