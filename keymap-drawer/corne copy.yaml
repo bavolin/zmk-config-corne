@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: corne}
+layout: {zmk_keyboard: corne copy}
 layers:
   Base:
   - ESCAPE
@@ -173,6 +173,28 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
+- p: [5, 17]
+  k: '%'
+- p: [4, 16]
+  k: $
+- p: [3, 15]
+  k: '#'
+- p: [2, 14]
+  k: '@'
+- p: [8, 20]
+  k: '*'
+- p: [32, 20]
+  k: /
+- p: [7, 19]
+  k: +
+- p: [31, 32]
+  k: '['
+- p: [33, 32]
+  k: ']'
+- p: [20, 19]
+  k: {t: (, s: <}
+- p: [20, 21]
+  k: {t: ), s: '>'}
 - p: [16, 15]
   k: {t: NavNum, h: toggle}
 - p: [1, 2]
