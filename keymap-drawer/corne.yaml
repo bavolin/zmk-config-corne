@@ -56,11 +56,11 @@ layers:
   - '9'
   - '-'
   - {t: ▽, type: trans}
-  - '&caps_word'
-  - Alt+PRINTSCREEN
-  - UP ARROW
+  - CAPS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - CAPS
+  - '&macro_HL'
   - PAGE UP
   - '%'
   - '4'
@@ -69,10 +69,10 @@ layers:
   - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Alt+PRINTSCREEN
   - PAGE DOWN
   - '*'
   - '1'
