@@ -132,7 +132,27 @@ rect.held, rect.combo.held { fill: #854747; }
 text.label, text.footer { stroke: black; }
 text.trans { fill: #7e8184; }
 path.combo { stroke: #7f7f7f; }
-</style>
+
+/* Combo box (the little key-shaped pill) */
+.combo rect {
+  fill: #FFD54F;         /* bold yellow fill */
+  stroke: #222;          /* dark outline for contrast */
+  stroke-width: 1.6px;
+}
+
+/* Combo arc lines */
+.combo path {
+  stroke: #FFB300;       /* stronger arc color */
+  stroke-width: 2.4px;   /* thicker lines to pop more */
+  opacity: 1;            /* ensure fully opaque */
+}
+
+/* Combo labels (text inside the combo box) */
+.combo .label {
+  fill: #111;            /* dark text for readability */
+  font-weight: 700;
+  font-size: 10px;       /* bump if you need bigger text */
+}</style>
 <g transform="translate(30, 0)" class="layer-Base">
 <text x="0" y="28" class="label" id="Base">Base:</text>
 <g transform="translate(0, 56)">
