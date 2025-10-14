@@ -45,23 +45,23 @@ layers:
   - {t: DELETE, h: Function}
   Numpad:
   - {t: Base, h: toggle}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - INSERT
+  - HOME
+  - UP ARROW
+  - END
+  - PAGE UP
   - '6'
   - '7'
   - '8'
   - '9'
   - '-'
   - {t: ▽, type: trans}
-  - CAPS
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - CAPS
-  - '&macro_HL'
-  - PAGE UP
+  - Alt+PRINTSCREEN
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - PAGE DOWN
   - '%'
   - '4'
   - '5'
@@ -70,10 +70,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt+PRINTSCREEN
-  - PAGE DOWN
+  - Ctl+BACKSPACE
+  - '&macro_HL'
+  - Ctl+DELETE
+  - CAPS
   - '*'
   - '1'
   - '2'
@@ -87,7 +87,7 @@ layers:
   - '0'
   - .
   ArrowNav:
-  - {t: ▽, type: trans}
+  - {t: Base, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -97,7 +97,7 @@ layers:
   - HOME
   - UP ARROW
   - END
-  - {t: ▽, type: trans}
+  - INSERT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -109,6 +109,7 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
+  - Alt+PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -116,10 +117,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+BACKSPACE
   - CAPS
-  - INS
+  - Ctl+BACKSPACE
+  - '&macro_HL'
   - Ctl+DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -205,9 +205,9 @@ combos:
   k: \
 - p: [19, 8, 21]
   k: ^
-- p: [19, 8, 41]
+- p: [19, 8, 32]
   k: <
-- p: [7, 20, 40]
+- p: [8, 21, 32]
   k: '>'
 - p: [20, 10]
   k: '~'
@@ -231,7 +231,7 @@ combos:
   k: '#'
 - p: [19, 20]
   k: TAB
-- p: [20, 21, 22]
+- p: [20, 21, 19]
   k: ENTER
 - p: [26, 28]
   k: Ctl+X
