@@ -218,8 +218,8 @@ layers:
 combos:
 - p: [16, 15]
   k: {t: Numpad, h: toggle}
-- p: [1, 2]
-  k: {t: Function, h: toggle}
+- p: [16, 15, 14]
+  k: {t: ArrowNav, h: toggle}
 - p: [7, 8]
   k: '='
 - p: [19, 20]
@@ -290,3 +290,5 @@ combos:
   k: Ctl+V
 - p: [12, 13, 14]
   k: Gui+Sft+S
+- p: [16, 15, 14, 13]
+  k: {t: Function, h: toggle}
