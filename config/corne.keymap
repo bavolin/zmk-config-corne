@@ -416,6 +416,7 @@ END:      Shortcuts Chords
             >;
         };
 
+/*
         SYM {
             display-name = "Symbols";
 
@@ -432,6 +433,7 @@ END:      Shortcuts Chords
                                   &macro_highlight_word  &trans           &trans       &trans     &trans     &macro_highlight_word
             >;
         };
+*/
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
