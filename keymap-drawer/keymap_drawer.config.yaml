@@ -9,7 +9,7 @@ draw_config:
   dark_mode: auto
   n_columns: 1
   separate_combo_diagrams: true
-  combo_diagrams_scale: 2
+  combo_diagrams_scale: 3
   inner_pad_w: 2.0
   inner_pad_h: 2.0
   outer_pad_w: 30.0
