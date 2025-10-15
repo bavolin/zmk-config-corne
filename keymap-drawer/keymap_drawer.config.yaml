@@ -2,8 +2,8 @@ draw_config:
   key_w: 60
   key_h: 56
   split_gap: 10.0
-  combo_w: 28
-  combo_h: 26
+  combo_w: 14
+  combo_h: 13
   key_rx: 1.0
   key_ry: 1.0
   dark_mode: auto
