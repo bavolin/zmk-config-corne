@@ -30,25 +30,25 @@ draw_config:
     rx: 4.0
     ry: 4.0
   svg_extra_style: |
-    /* Combo box (the little key-shaped pill) */
+      /* Combo box (the little key-shaped pill) */
     .combo rect {
-      fill: #FFD54F;         /* bold yellow fill */
-      stroke: #222;          /* dark outline for contrast */
-      stroke-width: 1.6px;
+      fill: #FF3B3B;      /* bold fill */
+      stroke: #000;
+      stroke-width: 3px;
     }
 
     /* Combo arc lines */
     .combo path {
-      stroke: #FFB300;       /* stronger arc color */
-      stroke-width: 2.4px;   /* thicker lines to pop more */
-      opacity: 1;            /* ensure fully opaque */
+      stroke: #FF3B3B;
+      stroke-width: 3px;
+      opacity: 1;
     }
 
-    /* Combo labels (text inside the combo box) */
+    /* Combo labels */
     .combo .label {
-      fill: #111;            /* dark text for readability */
+      fill: #111;
       font-weight: 700;
-      font-size: 10px;       /* bump if you need bigger text */
+      font-size: 10px;
     }
   footer_text: ''
   shrink_wide_legends: 7
