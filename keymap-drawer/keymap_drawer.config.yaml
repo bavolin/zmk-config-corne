@@ -36,6 +36,7 @@ draw_config:
         rect.held, rect.combo.held { fill: #FFB300 ; } 
         text.label, text.footer { stroke: black; }
         text.trans { fill: #7e8184; }
+        text.combo {fill: #ff8c00;  font-weight: 700;}
         path.combo { stroke: #7f7f7f; }
   shrink_wide_legends: 7
   style_layer_activators: true
