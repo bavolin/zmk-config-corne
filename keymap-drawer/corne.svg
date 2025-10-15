@@ -138,7 +138,7 @@ path.combo { stroke: #7f7f7f; }
     svg.keymap { fill: #d1d6db; }
     rect.key { fill: #3f4750; }  3f4750 16191c
     rect.key, rect.combo { stroke: #60666c; }
-    rect.combo, rect.combo-separate { fill: #0b0038 ; stroke: white; stroke-width: 1.8px; font-weight: 700;}
+    rect.combo, rect.combo-separate { fill: #0b0038 ; stroke: white;}
     rect.held, rect.combo.held { fill: #FFB300 ; } 
     text.label, text.footer { stroke: black; }
     text.trans { fill: #7e8184; }
