@@ -30,9 +30,9 @@ draw_config:
     ry: 4.0
   svg_extra_style: |2-
         svg.keymap { fill: #d1d6db; }
-        rect.key { fill: #16191c; }  3f4750
+        rect.key { fill: #3f4750; }  3f4750 16191c
         rect.key, rect.combo { stroke: #60666c; }
-        rect.combo, rect.combo-separate { fill: #0b0038 ; stroke: white;}  
+        rect.combo, rect.combo-separate { fill: #0b0038 ; stroke: white; stroke-width: 1.8px; }
         rect.held, rect.combo.held { fill: #FFB300 ; } 
         text.label, text.footer { stroke: black; }
         text.trans { fill: #7e8184; }
