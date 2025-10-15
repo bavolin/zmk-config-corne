@@ -26,7 +26,7 @@ layers:
   - {t: ;, h: LGUI}
   - ''''
   - LCTRL
-  - {t: Z, h: Alt+Z}
+  - Z
   - X
   - C
   - V
@@ -38,8 +38,8 @@ layers:
   - /
   - RSHFT
   - {t: LGUI, h: Function}
-  - {t: SPACE, h: ArrowNav}
-  - {t: TAB, h: Numpad}
+  - {t: TAB, h: ArrowNav}
+  - {t: SPACE, h: Numpad}
   - {t: RETURN, h: Numpad}
   - {t: BACKSPACE, h: ArrowNav}
   - {t: DELETE, h: Function}
