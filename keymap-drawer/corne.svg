@@ -142,6 +142,7 @@ path.combo { stroke: #7f7f7f; }
     rect.held, rect.combo.held { fill: #FFB300 ; } 
     text.label, text.footer { stroke: black; }
     text.trans { fill: #7e8184; }
+    text.combo {fill: #ff8c00;  font-weight: 700;}
     path.combo { stroke: #7f7f7f; }</style>
 <g transform="translate(30, 0)" class="layer-Base">
 <text x="0" y="28" class="label" id="Base">Base:</text>
