@@ -1,177 +1,177 @@
 layout: {zmk_keyboard: corne}
-# layers:
-#   Base:
-#   - ESCAPE
-#   - Q
-#   - W
-#   - E
-#   - R
-#   - T
-#   - Y
-#   - U
-#   - I
-#   - O
-#   - P
-#   - BACKSPACE
-#   - LSHFT
-#   - A
-#   - S
-#   - D
-#   - F
-#   - G
-#   - H
-#   - J
-#   - K
-#   - {t: L, h: LEFT ALT}
-#   - {t: ;, h: LGUI}
-#   - ''''
-#   - LCTRL
-#   - {t: Z, h: Alt+Z}
-#   - X
-#   - C
-#   - V
-#   - B
-#   - N
-#   - M
-#   - ','
-#   - .
-#   - /
-#   - RSHFT
-#   - {t: LGUI, h: Function}
-#   - {t: SPACE, h: ArrowNav}
-#   - {t: TAB, h: Numpad}
-#   - {t: RETURN, h: Numpad}
-#   - {t: BACKSPACE, h: ArrowNav}
-#   - {t: DELETE, h: Function}
-#   Numpad:
-#   - {t: Base, h: toggle}
-#   - INSERT
-#   - HOME
-#   - UP ARROW
-#   - END
-#   - PAGE UP
-#   - '6'
-#   - '7'
-#   - '8'
-#   - '9'
-#   - '-'
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - Alt+PRINTSCREEN
-#   - LEFT ARROW
-#   - DOWN ARROW
-#   - RIGHT ARROW
-#   - PAGE DOWN
-#   - '%'
-#   - '4'
-#   - '5'
-#   - '6'
-#   - +
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - Ctl+BACKSPACE
-#   - '&macro_HL'
-#   - Ctl+DELETE
-#   - CAPS
-#   - '*'
-#   - '1'
-#   - '2'
-#   - '3'
-#   - /
-#   - {t: ▽, type: trans}
-#   - Ctl+DELETE
-#   - Ctl+BACKSPACE
-#   - {type: held}
-#   - {t: ▽, type: trans}
-#   - '0'
-#   - .
-#   ArrowNav:
-#   - {t: Base, h: toggle}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - PAGE UP
-#   - HOME
-#   - UP ARROW
-#   - END
-#   - INSERT
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - PAGE DOWN
-#   - LEFT
-#   - DOWN
-#   - RIGHT
-#   - Alt+PRINTSCREEN
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - CAPS
-#   - Ctl+BACKSPACE
-#   - '&macro_HL'
-#   - Ctl+DEL
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {type: held}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   Function:
-#   - {t: Base, h: toggle}
-#   - F1
-#   - F2
-#   - F3
-#   - F4
-#   - F5
-#   - F12
-#   - F7
-#   - F8
-#   - F9
-#   - F10
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - F11
-#   - F12
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - '&studio_unlock'
-#   - F11
-#   - F4
-#   - F5
-#   - F6
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: BT, h: '0'}
-#   - {t: BT, h: '1'}
-#   - {t: BT, h: '2'}
-#   - BT CLR
-#   - BT CLR ALL
-#   - F10
-#   - F1
-#   - F2
-#   - F3
-#   - '&bootloader'
-#   - {t: ▽, type: trans}
-#   - {type: held}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
-#   - {t: ▽, type: trans}
+layers:
+  Base:
+  - ESCAPE
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BACKSPACE
+  - LSHFT
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - {t: L, h: LEFT ALT}
+  - {t: ;, h: LGUI}
+  - ''''
+  - LCTRL
+  - {t: Z, h: Alt+Z}
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHFT
+  - {t: LGUI, h: Function}
+  - {t: SPACE, h: ArrowNav}
+  - {t: TAB, h: Numpad}
+  - {t: RETURN, h: Numpad}
+  - {t: BACKSPACE, h: ArrowNav}
+  - {t: DELETE, h: Function}
+  Numpad:
+  - {t: Base, h: toggle}
+  - INSERT
+  - HOME
+  - UP ARROW
+  - END
+  - PAGE UP
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Alt+PRINTSCREEN
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - PAGE DOWN
+  - '%'
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+BACKSPACE
+  - '&macro_HL'
+  - Ctl+DELETE
+  - CAPS
+  - '*'
+  - '1'
+  - '2'
+  - '3'
+  - /
+  - {t: ▽, type: trans}
+  - Ctl+DELETE
+  - Ctl+BACKSPACE
+  - {type: held}
+  - {t: ▽, type: trans}
+  - '0'
+  - .
+  ArrowNav:
+  - {t: Base, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PAGE UP
+  - HOME
+  - UP ARROW
+  - END
+  - INSERT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - LEFT
+  - DOWN
+  - RIGHT
+  - Alt+PRINTSCREEN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - CAPS
+  - Ctl+BACKSPACE
+  - '&macro_HL'
+  - Ctl+DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Function:
+  - {t: Base, h: toggle}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F12
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&studio_unlock'
+  - F11
+  - F4
+  - F5
+  - F6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - BT CLR
+  - BT CLR ALL
+  - F10
+  - F1
+  - F2
+  - F3
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [16, 15]
   k: {t: Numpad, h: toggle}
