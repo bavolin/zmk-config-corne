@@ -1,20 +1,17 @@
-# keymap-drawer/keymap_drawer.config.yaml
 draw_config:
   key_w: 60
   key_h: 56
-  split_gap: 5.0
+  split_gap: 30.0
   combo_w: 28
   combo_h: 26
-  key_rx: 1.0
-  key_ry: 1.0
-  dark_mode: true
-  n_columns: 3
-
+  key_rx: 6.0
+  key_ry: 6.0
+  dark_mode: auto
+  n_columns: 1
   separate_combo_diagrams: true
-  combo_diagrams_scale: 3
-
+  combo_diagrams_scale: 2
+  inner_pad_w: 2.0
   inner_pad_h: 2.0
-  inner_pad_v: 2.0        # fix: was inner_pad_w
   outer_pad_w: 30.0
   outer_pad_h: 56.0
   line_spacing: 1.2
@@ -23,9 +20,7 @@ draw_config:
   small_pad: 2.0
   legend_rel_x: 0.0
   legend_rel_y: 0.0
-
   draw_key_sides: false
-  # key_side_pars is ignored while draw_key_sides is false
   key_side_pars:
     rel_x: 0.0
     rel_y: 4.0
@@ -33,19 +28,13 @@ draw_config:
     rel_h: 12.0
     rx: 4.0
     ry: 4.0
-
-  svg_extra_style: |
-    /* Combo box */
-    .combo rect { fill: #FF3B3B; stroke: #000; stroke-width: 3px; }
-    /* Combo arcs */
-    .combo path { stroke: #FF3B3B; stroke-width: 3px; opacity: 1; }
-    /* Combo labels */
-    .combo .label { fill: #111; font-weight: 700; font-size: 10px; }
-
-footer_text: ''
-shrink_wide_legends: 7
-style_layer_activators: true
-glyph_tap_size: 14
-glyph_hold_size: 12
-glyph_shifted_size: 10
-glyphs: {}
+  svg_extra_style: |2-
+        .combo rect { fill: #FF3B3B; stroke: #000; stroke-width: 3px; }
+        .combo path { stroke: #FF3B3B; stroke-width: 3px; opacity: 1; }
+        .combo .label { fill: #111; font-weight: 700; font-size: 10px; }
+  shrink_wide_legends: 7
+  style_layer_activators: true
+  glyph_tap_size: 14
+  glyph_hold_size: 12
+  glyph_shifted_size: 10
+  glyphs: {}
