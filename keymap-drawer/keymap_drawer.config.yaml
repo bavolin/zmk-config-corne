@@ -51,6 +51,7 @@ draw_config:
     text.tap, text.hold, text.shifted {
       fill: #ffffff;      /* key text color */
       stroke: none;
+      font-size: 14px;
     }
 
     /* pressed keys in combo diagrams */
