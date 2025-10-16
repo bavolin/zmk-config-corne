@@ -2,66 +2,32 @@ name: Draw ZMK keymaps
 
 on:
   workflow_dispatch:
+    inputs:
+      make_pngs:
+        description: "Also generate PNGs"
+        type: boolean
+        default: false
   push:
     paths:
       - "config/*.keymap"
       - "config/*.dtsi"
       - "keymap-drawer/**"
-      # - "boards/*/*/*.keymap"
 
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@v0.22.1
     permissions:
       contents: write
     with:
       keymap_patterns: "config/*.keymap"
       config_path: "keymap-drawer/keymap_drawer.config.yaml"
       output_folder: "keymap-drawer"
-      parse_args: ""
-      draw_args: ""   # set to e.g. corne:'-k corne' if the run complains about layout
 
   png:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.make_pngs }}
     needs: draw
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      # Pull the commit that the draw job just pushed
-      - name: Sync to latest commit after draw job
-        run: |
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          git fetch origin
-          git checkout "${GITHUB_REF_NAME}"
-          git pull --ff-only origin "${GITHUB_REF_NAME}"
-          ls -l keymap-drawer || true
-
-      - name: Install CairoSVG (pure Python)
-        run: pip install --user cairosvg
-
-      - name: Convert SVGs to PNGs
-        shell: bash
-        run: |
-          set -e
-          shopt -s nullglob
-          for f in keymap-drawer/*.svg; do
-            base="${f%.svg}"
-            python -m cairosvg "$f" -o "${base}@2x.png" -s 2 -d 300
-            python -m cairosvg "$f" -o "${base}@3x.png" -s 3 -d 300          
-          done
-          ls -l keymap-drawer
-
-      #Commit PNGs without creating an infinite loop
-      - name: Commit PNGs
-        run: |
-          if git status --porcelain | grep -q '\.png$'; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add keymap-drawer/*.png
-            git commit -m "Add PNG renders [skip ci]"
-            git push
-          fi
+      - run: echo "PNG job disabled unless manually requested."
