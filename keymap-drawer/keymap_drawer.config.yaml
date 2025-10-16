@@ -50,10 +50,7 @@ draw_config:
     text.trans { fill: #7e8184; }
 
     /* combo label INSIDE the pill */
-    .combo .label { font-weight: 800; font-size: 13px; }
-
-    /* dendron lines (only in non-separate diagrams) */
-    .combo path, path.combo { stroke: #7f7f7f; }
+    .combo text.label { font-weight: 800; font-size: 13px; }
 
   shrink_wide_legends: 7
   style_layer_activators: true
@@ -62,5 +59,6 @@ draw_config:
   glyph_shifted_size: 10
 
   glyphs: {}
+
 
 
