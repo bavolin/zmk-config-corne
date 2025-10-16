@@ -10,7 +10,7 @@ draw_config:
   n_columns: 1
   separate_combo_diagrams: true
   combo_diagrams_scale: 3
-  inner_pad_w: 2.0
+  inner_pad_v: 2.0
   inner_pad_h: 2.0
   outer_pad_w: 30.0
   outer_pad_h: 56.0
@@ -29,18 +29,39 @@ draw_config:
     rx: 4.0
     ry: 4.0
   svg_extra_style: |2-
-        svg.keymap { fill: #d1d6db; }
-        rect.key { fill: #3f4750; }  3f4750 16191c
-        rect.key, rect.combo { stroke: #60666c; }
-        rect.combo, rect.combo-separate { fill: #0b0038 ; stroke: white;}
-        rect.held, rect.combo.held { fill: #FFB300 ; } 
-        text.label, text.footer { stroke: black; }
-        text.trans { fill: #7e8184; }
-        text.combo {fill: #ff8c00;  font-weight: 700;}
-        path.combo { stroke: #7f7f7f; }
+    /* overall tint */
+    svg.keymap { fill: #d1d6db; }
+
+    /* base keys */
+    rect.key { fill: #3f4750; }
+    rect.key, rect.combo { stroke: #60666c; }
+
+    /* combo pill */
+    rect.combo, rect.combo-separate {
+      fill: #0b0038;
+      stroke: #ffffff;
+      stroke-width: 1.8px;
+    }
+
+    /* pressed keys in combo diagrams */
+    rect.held, rect.combo.held { fill: #FFB300; }
+
+    /* titles/footers outline for legibility */
+    text.label, text.footer { stroke: black; }
+
+    /* transparent key legends */
+    text.trans { fill: #7e8184; }
+
+    /* combo label INSIDE the pill */
+    .combo .label { fill: #ff8c00; font-weight: 700; }
+
+    /* dendron lines (only in non-separate diagrams) */
+    .combo path, path.combo { stroke: #7f7f7f; }
+
   shrink_wide_legends: 7
   style_layer_activators: true
   glyph_tap_size: 14
   glyph_hold_size: 12
   glyph_shifted_size: 10
+
   glyphs: {}
