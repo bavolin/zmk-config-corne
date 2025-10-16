@@ -33,13 +33,15 @@ draw_config:
     # .combo text.label { font-color: #fff; font-weight: bold; font-size: 20px; }
     # /* transparent key legends */
     # text.trans { fill: #7e8184; }
+        # rect.key, rect.combo { stroke: #60666c; }
+
   svg_extra_style: |2-
     /* base keys */
     rect.key { fill: #3f4750; }
-    rect.key, rect.combo { stroke: #60666c; }
+    rect.key, rect.combo { stroke: white; }
 
     /* titles/footers outline for legibility */
-    text.label, text.footer { stroke: black; }
+    text.label, text.footer { stroke: green; }
 
         /* combo pill */
     rect.combo, rect.combo-separate {
