@@ -135,9 +135,6 @@ text.trans { fill: #7e8184; }
 path.combo { stroke: #7f7f7f; }
 
 }
-/* overall tint */
-svg.keymap { fill: #d1d6db; }
-
 /* base keys */
 rect.key { fill: #3f4750; }
 rect.key, rect.combo { stroke: #60666c; }
