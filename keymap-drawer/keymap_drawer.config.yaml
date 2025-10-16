@@ -45,7 +45,7 @@ draw_config:
     }
 
     /* pressed keys in combo diagrams */
-    rect.held, rect.combo.held { f  ill: #FFB300; }
+    rect.held, rect.combo.held { fill: #FFB300; }
 
     /* transparent key legends */
     text.trans { fill: #7e8184; }
