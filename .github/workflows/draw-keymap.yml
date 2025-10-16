@@ -56,12 +56,12 @@ jobs:
           ls -l keymap-drawer
 
       #Commit PNGs without creating an infinite loop
-      # - name: Commit PNGs
-      #   run: |
-      #     if git status --porcelain | grep -q '\.png$'; then
-      #       git config user.name "github-actions[bot]"
-      #       git config user.email "github-actions[bot]@users.noreply.github.com"
-      #       git add keymap-drawer/*.png
-      #       git commit -m "Add PNG renders [skip ci]"
-      #       git push
-      #     fi
+      - name: Commit PNGs
+        run: |
+          if git status --porcelain | grep -q '\.png$'; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add keymap-drawer/*.png
+            git commit -m "Add PNG renders [skip ci]"
+            git push
+          fi
