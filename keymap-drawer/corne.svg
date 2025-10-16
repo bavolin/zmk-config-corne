@@ -139,10 +139,10 @@ rect.combo, rect.combo-separate {
   font-color: purple;
 }
 
-rect.combo, rect.combo-separate text.label {
-  fill: #ffffff;
-  font-weight: bold;
-  font-size: 20px; 
+/* main legend, hold legend, shifted legend */
+text.tap, text.hold, text.shifted {
+  fill: #ffffff;      /* key text color */
+  stroke: none;
 }
 
 /* pressed keys in combo diagrams */
