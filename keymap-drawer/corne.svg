@@ -126,10 +126,10 @@ path.combo {
 
 /* base keys */
 rect.key { fill: #3f4750; }
-rect.key, rect.combo { stroke: #60666c; }
+rect.key, rect.combo { stroke: white; }
 
 /* titles/footers outline for legibility */
-text.label, text.footer { stroke: black; }
+text.label, text.footer { stroke: green; }
 
     /* combo pill */
 rect.combo, rect.combo-separate {
