@@ -2,8 +2,8 @@ draw_config:
   key_w: 60
   key_h: 56
   split_gap: 10.0
-  combo_w: 14
-  combo_h: 13
+  combo_w: 20
+  combo_h: 16
   key_rx: 1.0
   key_ry: 1.0
   dark_mode: auto
@@ -40,7 +40,7 @@ draw_config:
     rect.combo, rect.combo-separate {
       fill: #0b0038;
       stroke: #ffffff;
-      stroke-width: 1.8px;
+      stroke-width: 1px;
     }
 
     /* pressed keys in combo diagrams */
@@ -53,7 +53,7 @@ draw_config:
     text.trans { fill: #7e8184; }
 
     /* combo label INSIDE the pill */
-    .combo .label { fill: #ff8c00; font-weight: 700; }
+    .combo .label { font-weight: 800; font-size: 13px; }
 
     /* dendron lines (only in non-separate diagrams) */
     .combo path, path.combo { stroke: #7f7f7f; }
@@ -65,3 +65,4 @@ draw_config:
   glyph_shifted_size: 10
 
   glyphs: {}
+
