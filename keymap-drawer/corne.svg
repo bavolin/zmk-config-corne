@@ -124,20 +124,7 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 
-@media (prefers-color-scheme: dark) {
-svg.keymap { fill: #d1d6db; }
-rect.key { fill: #3f4750; }
-rect.key, rect.combo { stroke: #60666c; }
-rect.combo, rect.combo-separate { fill: #1f3d7a; }
-rect.held, rect.combo.held { fill: #854747; }
-text.label, text.footer { stroke: black; }
-text.trans { fill: #7e8184; }
-path.combo { stroke: #7f7f7f; }
 
-}
-/* base keys */
-rect.key { fill: #3f4750; }
-rect.key, rect.combo { stroke: #60666c; }
 
 /* combo pill */
 rect.combo, rect.combo-separate {
@@ -149,14 +136,11 @@ rect.combo, rect.combo-separate {
 /* pressed keys in combo diagrams */
 rect.held, rect.combo.held { fill: #FFB300; }
 
-/* titles/footers outline for legibility */
-text.label, text.footer { stroke: black; }
-
 /* transparent key legends */
 text.trans { fill: #7e8184; }
 
 /* combo label INSIDE the pill */
-.combo text.label { font-weight: bold; font-size: 20px; }</style>
+.combo text.label { font-color: white; font-weight: bold; font-size: 20px; }</style>
 <g transform="translate(30, 0)" class="layer-Base">
 <text x="0" y="28" class="label" id="Base">Base:</text>
 <g transform="translate(0, 56)">
