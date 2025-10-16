@@ -49,7 +49,9 @@ jobs:
           set -e
           shopt -s nullglob
           for f in keymap-drawer/*.svg; do
-            python -m cairosvg "$f" -o "${f%.svg}.png" -s 2 -d 300
+            base="${f%.svg}"
+            python -m cairosvg "$f" -o "${base}@2x.png" -s 2 -d 300
+            python -m cairosvg "$f" -o "${base}@3x.png" -s 3 -d 300          
           done
           ls -l keymap-drawer
 
