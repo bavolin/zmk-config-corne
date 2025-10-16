@@ -156,10 +156,7 @@ text.label, text.footer { stroke: black; }
 text.trans { fill: #7e8184; }
 
 /* combo label INSIDE the pill */
-.combo .label { font-weight: 800; font-size: 13px; }
-
-/* dendron lines (only in non-separate diagrams) */
-.combo path, path.combo { stroke: #7f7f7f; }</style>
+.combo text.label { font-weight: 800; font-size: 13px; }</style>
 <g transform="translate(30, 0)" class="layer-Base">
 <text x="0" y="28" class="label" id="Base">Base:</text>
 <g transform="translate(0, 56)">
