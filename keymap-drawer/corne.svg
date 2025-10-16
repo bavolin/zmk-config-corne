@@ -127,9 +127,9 @@ path.combo {
 /* base keys */
 rect.key { fill: #3f4750; }
 rect.key, rect.combo { stroke: white; }
-
+rect.key, rect.combo text.label { fill: yellow; }
 /* titles/footers outline for legibility */
-text.label, text.footer { stroke: green; fill: red}
+text.label, text.footer { fill: white; stroke: black; stroke-width: 0.5px; paint-order: stroke; }
 
     /* combo pill */
 rect.combo, rect.combo-separate {
