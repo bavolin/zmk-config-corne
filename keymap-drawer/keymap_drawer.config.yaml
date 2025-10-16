@@ -6,7 +6,7 @@ draw_config:
   combo_h: 16
   key_rx: 1.0
   key_ry: 1.0
-  dark_mode: auto
+  # dark_mode: auto
   n_columns: 1
   separate_combo_diagrams: true
   combo_diagrams_scale: 3
@@ -28,10 +28,13 @@ draw_config:
     rel_h: 12.0
     rx: 4.0
     ry: 4.0
+    # /* base keys */
+    # rect.key { fill: #3f4750; }
+    # rect.key, rect.combo { stroke: #60666c; }
+    # /* titles/footers outline for legibility */
+    # text.label, text.footer { stroke: black; }
   svg_extra_style: |2-
-    /* base keys */
-    rect.key { fill: #3f4750; }
-    rect.key, rect.combo { stroke: #60666c; }
+
 
     /* combo pill */
     rect.combo, rect.combo-separate {
@@ -43,14 +46,11 @@ draw_config:
     /* pressed keys in combo diagrams */
     rect.held, rect.combo.held { fill: #FFB300; }
 
-    /* titles/footers outline for legibility */
-    text.label, text.footer { stroke: black; }
-
     /* transparent key legends */
     text.trans { fill: #7e8184; }
 
     /* combo label INSIDE the pill */
-    .combo text.label { font-weight: bold; font-size: 20px; }
+    .combo text.label { font-color: white; font-weight: bold; font-size: 20px; }
 
   shrink_wide_legends: 7
   style_layer_activators: true
