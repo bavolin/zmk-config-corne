@@ -129,7 +129,7 @@ rect.key { fill: #3f4750; }
 rect.key, rect.combo { stroke: white; }
 
 /* titles/footers outline for legibility */
-text.label, text.footer { stroke: green; }
+text.label, text.footer { stroke: green; fill: red}
 
     /* combo pill */
 rect.combo, rect.combo-separate {
