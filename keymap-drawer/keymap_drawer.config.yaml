@@ -33,24 +33,47 @@ draw_config:
     # rect.key, rect.combo { stroke: #60666c; }
     # /* titles/footers outline for legibility */
     # text.label, text.footer { stroke: black; }
+    #     /* combo pill */
+    # rect.combo, rect.combo-separate {
+    #   fill: #0b0038;
+    #   stroke: #ffffff;
+    #   stroke-width: 1px;
+    # }
+
+    # /* pressed keys in combo diagrams */
+    # rect.held, rect.combo.held { fill: #FFB300; }
+
+    # /* transparent key legends */
+    # text.trans { fill: #7e8184; }
+
+    # /* combo label INSIDE the pill */
+    # .combo text.label { font-color: #fff; font-weight: bold; font-size: 20px; }
   svg_extra_style: |2-
-
-
-    /* combo pill */
+    /* combo pill box */
     rect.combo, rect.combo-separate {
-      fill: #0b0038;
+      fill: #13224d;            /* slightly lighter than #0b0038 for readability */
       stroke: #ffffff;
-      stroke-width: 1px;
+      stroke-width: 1.8px;
     }
 
-    /* pressed keys in combo diagrams */
-    rect.held, rect.combo.held { fill: #FFB300; }
+    /* >>> Make combo RESULT text readable <<< */
+    .combo text.label {
+      fill: #ffffff;            /* pure white (or try #ffd24d for yellow) */
+      font-weight: 800;
+      font-size: 12px;          /* bump to 13–14 if you like */
+      stroke: none !important;  /* kill the global black stroke here */
+      paint-order: normal;
+    }
 
-    /* transparent key legends */
-    text.trans { fill: #7e8184; }
+    /* Keep your global outline for headers/footers, but EXCLUDE combo labels */
+    svg.keymap > text.label,
+    text.footer {
+      stroke: black;
+      stroke-width: 4px;
+      paint-order: stroke;
+    }
 
-    /* combo label INSIDE the pill */
-    .combo text.label { font-color: #fff; font-weight: bold; font-size: 20px; }
+
 
   shrink_wide_legends: 7
   style_layer_activators: true
