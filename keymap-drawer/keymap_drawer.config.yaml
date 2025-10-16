@@ -50,7 +50,7 @@ draw_config:
     text.trans { fill: #7e8184; }
 
     /* combo label INSIDE the pill */
-    .combo text.label { font-color: white; font-weight: bold; font-size: 20px; }
+    .combo text.label { font-color: #fff; font-weight: bold; font-size: 20px; }
 
   shrink_wide_legends: 7
   style_layer_activators: true
