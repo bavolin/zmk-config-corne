@@ -140,7 +140,7 @@ rect.held, rect.combo.held { fill: #FFB300; }
 text.trans { fill: #7e8184; }
 
 /* combo label INSIDE the pill */
-.combo text.label { font-color: white; font-weight: bold; font-size: 20px; }</style>
+.combo text.label { font-color: #fff; font-weight: bold; font-size: 20px; }</style>
 <g transform="translate(30, 0)" class="layer-Base">
 <text x="0" y="28" class="label" id="Base">Base:</text>
 <g transform="translate(0, 56)">
