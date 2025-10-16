@@ -29,9 +29,6 @@ draw_config:
     rx: 4.0
     ry: 4.0
   svg_extra_style: |2-
-    /* overall tint */
-    svg.keymap { fill: #d1d6db; }
-
     /* base keys */
     rect.key { fill: #3f4750; }
     rect.key, rect.combo { stroke: #60666c; }
@@ -65,4 +62,5 @@ draw_config:
   glyph_shifted_size: 10
 
   glyphs: {}
+
 
